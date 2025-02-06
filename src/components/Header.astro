@@ -1,0 +1,39 @@
+---
+import '../styles/global.css'
+
+---
+
+<section class="min-h-screen flex flex-col justify-center items-center text-center bg-gray-200 dark:bg-gray-950 text-gray-900 dark:text-gray-100 px-6">
+    <h1>Alexis</h1>
+    <h3>Advanced Student Computer Science</h3>
+    <p>I am a 16 year old student from Argentina. I am currently in my 3rd year of high school, and I am learning about computer science. I am interested in web development and machine learning.</p>
+   
+        <li>About</li>
+        <li>Projects</li>
+        <li>Skills</li>
+
+
+    <div class="flex flex-col mb-auto mr-auto ml-auto mt-auto pb-20">
+        <a src="./GitHub.webp"/>
+        <a src="./Linkedin.webp"/>
+        <a src="./Instagram.webp"/>
+    </div>
+</section>
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const header = document.querySelector("header");
+        const triggerPoint = document.querySelector("#hero"); // El punto donde el header se vuelve fijo
+  
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > triggerPoint.offsetHeight) {
+            header.classList.add("fixed", "top-0", "left-0", "w-full", "bg-white", "shadow-md", "z-50");
+          } else {
+            header.classList.remove("fixed", "top-0", "left-0", "w-full", "bg-white", "shadow-md", "z-50");
+          }
+        });
+      });
+    </script>
+  
