@@ -2,7 +2,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html.dark {
-  background-color: #0d0950;
+  background-color:
   color: #fff;
 }
 

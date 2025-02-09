@@ -1,30 +1,15 @@
 ---
-import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
-import Header from "../components/Header.astro"
-import About from "../components/About.astro"
-
-
+import MainContent from "../components/MainContent.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout>
-	<Hero />
-	<Header />
-	<About/> 
+	
+	<section id="hero">
+		<Hero />
+	</section>
+
+	
+	<MainContent />
 </Layout>
-
-
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-	  const header = document.querySelector("#header");
-	  const triggerPoint = document.querySelector("#hero");
-  
-	  window.addEventListener("scroll", () => {
-		if (window.scrollY > triggerPoint.offsetHeight) {
-		  header.classList.add("fixed", "top-0", "left-0", "w-full", "bg-white", "shadow-md", "z-50");
-		} else {
-		  header.classList.remove("fixed", "top-0", "left-0", "w-full", "bg-white", "shadow-md", "z-50");
-		}
-	  });
-	});
-  </script>
